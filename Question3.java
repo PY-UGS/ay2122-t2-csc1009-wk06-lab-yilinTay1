@@ -12,8 +12,9 @@ public class Question3 {
         return list.indexOf(searchVal);
     }
     public static void main(String[] args) {
+        Random rand = new Random(); //instance of random class
         LinkedList<Integer> list = new LinkedList<Integer>();
-        System.out.println(findValue(list,1500));
+        System.out.println(findValue(list,rand.nextInt(1000,9999)));
         System.out.println("The list of 500 random integer range from 1000 to 9999: "+list);
     }
 
